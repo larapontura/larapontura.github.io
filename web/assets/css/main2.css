@@ -1,4 +1,4 @@
-f/**
+/**
 * Template Name: FlexStart
 * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
 * Updated: Jun 14 2024 with Bootstrap v5.3.3
@@ -14,7 +14,7 @@ f/**
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Roboto Serif",  sans-serif;
-  --nav-font: "Chivo",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
 }
 
 
@@ -24,17 +24,17 @@ f/**
   --background-color: #edede4; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #012970; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4154f1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
+  --accent-color: #042A2B; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --contrast-color: black; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #012970;  /* The default color of the main navmenu links */
-  --nav-hover-color: #4154f1; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #042A2B;  /* The default color of the main navmenu links */
+  --nav-hover-color: black; /* Applied to main navmenu links when they are hovered over or active */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #ff9100; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #4154f1; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #042A2B; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #042A2B; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Smooth scroll */
@@ -82,6 +82,7 @@ a:hover {
     font-size: 3rem;
     color: #042A2B;
     margin-bottom: 20px;
+    line-height: 1.5rem;
     
     
 
@@ -91,8 +92,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
+  color: #042A2B;
+  font-family: 'Roboto Serif', serif;
 }
 
 /*--------------------------------------------------------------
@@ -122,7 +123,7 @@ h6 {
   color: var(--heading-color);
 }
 
-.header -gets.btntarted,
+.header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: black;
   background: #edede4;
@@ -197,10 +198,10 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: #042A2B;
     padding: 18px 12px;
     font-size: 15px;
-    font-family: var(--nav-font);
+    font-family: 'Chivo', sans-serif;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -224,8 +225,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
-  }
+    color: #042A2B  }
 
   .navmenu .dropdown ul {
     margin: 0;
@@ -251,7 +251,7 @@ h6 {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--nav-dropdown-color);
+    color: #042A2B;
   }
 
   .navmenu .dropdown ul a i {
@@ -287,8 +287,8 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
+    color: black;
+    font-size: 20px;
     line-height: 0;
     margin-right: 10px;
     cursor: pointer;
@@ -814,7 +814,7 @@ section,
 .section-title h2 {
   font-size: 13px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 700;
   /* padding: 8px 20px; */
   margin: 0;
   /* background: color-mix(in srgb, var(--accent-color), transparent 90%);
@@ -822,11 +822,11 @@ section,
   display: inline-block;
   /* text-transform: uppercase; */
   border-radius: 50px;
-  font-family: 'Roboto Serif', serif; 
+  font-family: var(--default-font);
 }
 
 .section-title p {
-  color: var(--heading-color);
+  color: #042A2B;
   margin: 10px 0 0 0;
   font-size: 32px;
   font-weight: 700;
@@ -845,12 +845,11 @@ section,
   min-height: 100vh;
   position: relative;
   padding: 80px 0 60px 0;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  /* background: url(../img/hero-detalle.jpeg) top center no-repeat; */
+  background: url(../img/Final-Hero.jpg) top center no-repeat;
   background-size: contain;
-background-repeat: no-repeat;
-
+background-repeat: no-repeat; */
 }
 
 .hero h1 {
@@ -929,14 +928,32 @@ background-repeat: no-repeat;
 
 @media (max-width: 640px) {
   .hero h1 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
+    text-align: center;
+    
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 12px;
     line-height: 24px;
     margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #btn-mobile {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+  }
+
+  #titular-mobile {
+    font-size: 18px;
+  }
+
+  #cecilia-mobile {
+    /* background-image: url(/web/assets/img/docente-detalle.jpg); */
+   
   }
 }
 
@@ -1007,14 +1024,15 @@ background-repeat: no-repeat;
 
 .about .content h3 {
   font-size: 14px;
-  font-weight: 700;
   color: var(--accent-color);
-  text-transform: uppercase;
+  
 }
 
 .about .content h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-family: 'Roboto Serif';
+  color: #7F3828;
+
 }
 
 .about .content p {
@@ -1057,7 +1075,7 @@ background-repeat: no-repeat;
   background-color: var(--background-color);
   color: var(--default-color);
   padding: 30px;
-  /* box-shadow: 0px 0 10px color-mix(in srgb, var(--default-color), transparent 92%); */
+  box-shadow: 0px 0 10px color-mix(in srgb, var(--default-color), transparent 92%);
   text-align: center;
   transition: 0.3s;
   height: 100%;
@@ -1065,27 +1083,24 @@ background-repeat: no-repeat;
 }
 
 .values .card img {
-  /* padding: 30px 50px; */
+  padding: 30px 50px;
   transition: 0.5s;
   transform: scale(1.1);
 }
 
 .values .card h3 {
-  font-size: 18px;
-  /* font-weight: 700; */
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 18px;
-  padding-top: 20px;
-  font-family: 'Chivo', sans-serif;
-  line-height: 1.6rem;
 }
 
-/* .values .card:hover {
+.values .card:hover {
   box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 88%);
-} */
+}
 
-.values .card:hover img 
-  /* { transform: scale(1);
-} */
+.values .card:hover img {
+  transform: scale(1);
+}
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1128,10 +1143,8 @@ background-repeat: no-repeat;
 
 .features .feature-box h3 {
   font-size: 18px;
-  font-family: 'Chivo', sans-serif;
-  
+  font-weight: 700;
   margin: 0;
-
 }
 
 .features .feature-box i {
@@ -1166,48 +1179,15 @@ background-repeat: no-repeat;
 .alt-features .icon-box i {
   font-size: 44px;
   line-height: 44px;
-  color: #E9C820; 
+  color: var(--accent-color);
   margin-right: 15px;
 }
 
 .alt-features .icon-box p {
   font-size: 15px;
-  color: white;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 0;
-  font-family: 'Open Sans';
-  font-size: 14px;
 }
-
-.features .container,
-.alt-features .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* O usa 'row' si prefieres que los elementos estén en una fila */
-}
-
-.features .row,
-.alt-features .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.features .icon-box,
-.alt-features .icon-box {
-  text-align: center;
-}
-
-.features .container,
-.alt-features .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* O usa 'row' si prefieres que los elementos estén en una fila */
-}
-
-
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1386,7 +1366,6 @@ background-repeat: no-repeat;
 }
 
 .pricing h3 {
-  font-weight: 700;
   font-size: 18px;
   margin-bottom: 15px;
 }
@@ -1464,8 +1443,8 @@ background-repeat: no-repeat;
   z-index: 1;
   font-size: 10px;
   padding: 2px 0 3px 0;
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: #E9C820;
+  color: black;
 }
 
 /*--------------------------------------------------------------
@@ -1825,7 +1804,6 @@ background-repeat: no-repeat;
 }
 
 .team .team-member .member-info p {
-  font-style: italic;
   font-size: 14px;
   padding-top: 15px;
   line-height: 26px;
@@ -1916,14 +1894,14 @@ background-repeat: no-repeat;
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  color: #edede4; 
+  
 }
 
 .features .feture-tabs .tab-content i {
   font-size: 24px;
   line-height: 0;
   margin-right: 8px;
-  color:#EDEDE4; 
+  
 }
 
 .features .feature-icons {
